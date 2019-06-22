@@ -28,7 +28,7 @@ class MovieItem extends React.Component {
                 className="movieItem"
             >
                 <img src={item.img} alt={item.title} width="100%" height="250px"/>
-                <p className="movieItem_title"> {item.title} </p>
+                <p className="movieItem-title"> {item.title} </p>
                 <div className='button'>
                     <button 
                         className={this.props[item.title] ? "button-show":"button-hidden"}

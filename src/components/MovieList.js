@@ -17,7 +17,7 @@ class MovieList extends React.Component {
         return (
             <div >
                 <h2 className="title">{listName}</h2>
-                <ul className="card-content" >
+                <ul className="movie-content" >
                 {
                     list.map((item) => {
                     return  <li key={item.id}>
