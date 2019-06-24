@@ -10,7 +10,6 @@ class App extends Component {
       <div className="App">
         <Header className = "App-header"/>
         <MovieList list="My List" btnName="Remove" listType="mylist"/>
-        <MovieList list="Recommendation List" btnName="Add" listType="recommendations"/>
         <LikeList/>
       </div>
     );

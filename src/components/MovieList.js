@@ -10,19 +10,26 @@ class MovieList extends React.Component {
     }
 
     render() {
-        const list = this.props.MovieList[this.props.listType];
-        const name = this.props.btnName;
-        const listName = this.props.list;
-        const clickName = name === 'Remove' ? this.props.removeMovie : this.props.addMovie;
+        const myList = this.props.MovieList["mylist"];
+        const recommendList = this.props.MovieList["recommendations"];
         return (
             <div >
-                <h2 className="title">{listName}</h2>
+                <h2 className="title">My List</h2>
                 <ul className="movie-content" >
                 {
-                    list.map((item) => {
+                    myList.map((item) => {
                     return  <li key={item.id}>
-                                <MovieItem item = {item}  button={name}  onClick={clickName}/>
-                                
+                                <MovieItem item = {item}  button="Remove"  onClick={()=>this.props.removeMovie(item)}/>    
+                            </li>
+                    })
+                } 
+                </ul>
+                <h2 className="title">Recommendation List</h2>
+                <ul className="movie-content" >
+                {
+                    recommendList.map((item) => {
+                    return  <li key={item.id}>
+                                <MovieItem item = {item}  button="Add"  onClick={()=>this.props.addMovie(item)}/>                     
                             </li>
                     })
                 } 
