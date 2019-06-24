@@ -26,7 +26,7 @@ const hideButton = (str) => ({
 })
 
 const fetchMovie = () => dispatch => {
-    return fetch('./movieList.json')
+    return fetch('https://5d1146aabebb9800143d20cb.mockapi.io/movielist')
         .then(response =>{
             return response.json()
         })

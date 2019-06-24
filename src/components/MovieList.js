@@ -28,6 +28,7 @@ class MovieList extends React.Component {
                 } 
                 </ul>
             </div>
+            
         )
     }
 }
