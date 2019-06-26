@@ -1,4 +1,4 @@
-import { ADD, DELETE, GET, SHOW, HIDE } from './constants'
+import { ADD, DELETE, GET, SHOW, HIDE } from './constants';
 
 const addMovie = (movie) => ({
     type: ADD,
