@@ -1,13 +1,4 @@
-const ADD = 'ADD';
-const DELETE = 'DELETE';
-const GET = 'GET';
-const SHOW = 'SHOW';
-const HIDE = 'HIDE'
-
-export { 
-    ADD, 
-    DELETE,
-    GET,
-    SHOW,
-    HIDE
-}
+const ADD = "ADD";
+const DELETE = "DELETE";
+const GET = "GET";
+export { ADD, DELETE, GET };
