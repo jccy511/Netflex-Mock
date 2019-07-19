@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { fetchMovie } from "../Redux/actions/index";
 
+//LikeList template
 class LikeList extends React.Component {
   componentDidMount() {
     this.props.fetchMovie();

@@ -1,4 +1,4 @@
-const ADD = "ADD";
-const DELETE = "DELETE";
-const GET = "GET";
-export { ADD, DELETE, GET };
+const ADD_MOVIE = "ADADD_MOVIED";
+const DELETE_MOVIE = "DELETE_MOVIE";
+const GET_DATA = "GET_DATA";
+export { ADD_MOVIE, DELETE_MOVIE, GET_DATA };

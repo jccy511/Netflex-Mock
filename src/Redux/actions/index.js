@@ -1,17 +1,17 @@
-import { ADD, DELETE, GET } from "./constants";
+import { ADD_MOVIE, DELETE_MOVIE, GET_DATA } from "./constants";
 
 const addMovie = movie => ({
-  type: ADD,
+  type: ADD_MOVIE,
   movie
 });
 
 const removeMovie = movie => ({
-  type: DELETE,
+  type: DELETE_MOVIE,
   movie
 });
 
 const reveiveData = data => ({
-  type: GET,
+  type: GET_DATA,
   data
 });
 

@@ -3,6 +3,7 @@ import { addMovie, removeMovie, fetchMovie } from "../Redux/actions/index";
 import { connect } from "react-redux";
 import "./../App.css";
 
+//MovieList template
 class MovieList extends React.Component {
   componentDidMount() {
     this.props.fetchMovie();
@@ -14,7 +15,6 @@ class MovieList extends React.Component {
     const listName = this.props.list;
     const clickName =
       buttonName === "Remove" ? this.props.removeMovie : this.props.addMovie;
-    console.log("clickName is", clickName);
     return (
       <div>
         <h2 className="title">{listName}</h2>

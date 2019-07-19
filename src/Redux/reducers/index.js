@@ -1,4 +1,4 @@
-import { ADD, DELETE, GET } from "../actions/constants";
+import { ADD_MOVIE, DELETE_MOVIE, GET_DATA } from "../actions/constants";
 
 const defaultState = {
   mylist: [],
@@ -7,10 +7,10 @@ const defaultState = {
 
 const rootReducer = (state = defaultState, action) => {
   switch (action.type) {
-    case GET:
+    case GET_DATA:
       return action.data;
 
-    case ADD:
+    case ADD_MOVIE:
       const recommendItem = state.recommendations.map(item => item.id);
       const recommendIndex = recommendItem.indexOf(action.movie.id);
       return {
@@ -22,7 +22,7 @@ const rootReducer = (state = defaultState, action) => {
         [action.str]: false
       };
 
-    case DELETE:
+    case DELETE_MOVIE:
       const listItem = state.mylist.map(item => item.id);
       const listIndex = listItem.indexOf(action.movie.id);
       return {
