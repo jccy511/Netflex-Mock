@@ -15,6 +15,7 @@ const reveiveData = data => ({
   data
 });
 
+//fetch movie data from mock api
 const fetchMovie = () => dispatch => {
   return fetch("https://5d1146aabebb9800143d20cb.mockapi.io/movielist")
     .then(response => {
