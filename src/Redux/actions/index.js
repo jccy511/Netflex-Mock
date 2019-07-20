@@ -22,6 +22,9 @@ const fetchMovie = () => dispatch => {
     })
     .then(response => {
       return dispatch(reveiveData(response));
+    })
+    .catch(error => {
+      console.error('Error:', error)
     });
 };
 
